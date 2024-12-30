@@ -54,7 +54,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
 
     {
-      "image": "assets/image/mic.png",
+      "image": "assets/image/ mic.png",
       "title": "Holy Quran Radio",
       "description": "You can listen to the Holy Quran Radio through the application easily and for free",
     },
