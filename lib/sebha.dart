@@ -1,19 +1,23 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'BottomNavBar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'intropages.dart';
+import 'main.dart';
 
-void main() {
-  runApp(const TasbihApp());
-}
+
+
 
 class TasbihApp extends StatelessWidget {
-  const TasbihApp({Key? key}) : super(key: key);
+  final bool hasSeenOnboarding;
+
+  const TasbihApp({Key? key ,required this.hasSeenOnboarding}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TasbihScreen(),
+      home: hasSeenOnboarding ? TasbihScreen() : OnboardingScreen(),
     );
   }
 }

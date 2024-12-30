@@ -41,7 +41,6 @@ class _RadioScreenState extends State<RadioScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // Background
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
